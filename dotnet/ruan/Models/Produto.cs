@@ -10,7 +10,5 @@ namespace ruan.Models {
        public decimal Preco;
        public int Quantidade;
        public virtual Categoria? Categoria {get; set;}
-
-       public virtual ICollection<Carrinho>? Carrinhos {get; set;}
     }
 }
