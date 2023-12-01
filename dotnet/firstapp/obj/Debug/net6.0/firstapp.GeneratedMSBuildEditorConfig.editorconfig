@@ -15,12 +15,52 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /home/ruanm/Codes/aps_2023.2/dotnet/firstapp
 build_property._RazorSourceGeneratorDebug = 
 
+[/home/ruanm/Codes/aps_2023.2/dotnet/firstapp/Views/Alunos/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWx1bm9zL0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/ruanm/Codes/aps_2023.2/dotnet/firstapp/Views/Alunos/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWx1bm9zL0RlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/ruanm/Codes/aps_2023.2/dotnet/firstapp/Views/Alunos/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWx1bm9zL0RldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/ruanm/Codes/aps_2023.2/dotnet/firstapp/Views/Alunos/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWx1bm9zL0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/ruanm/Codes/aps_2023.2/dotnet/firstapp/Views/Alunos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWx1bm9zL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/ruanm/Codes/aps_2023.2/dotnet/firstapp/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/ruanm/Codes/aps_2023.2/dotnet/firstapp/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/ruanm/Codes/aps_2023.2/dotnet/firstapp/Views/Professores/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZmVzc29yZXMvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/ruanm/Codes/aps_2023.2/dotnet/firstapp/Views/Professores/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZmVzc29yZXMvRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/ruanm/Codes/aps_2023.2/dotnet/firstapp/Views/Professores/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZmVzc29yZXMvRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/ruanm/Codes/aps_2023.2/dotnet/firstapp/Views/Professores/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZmVzc29yZXMvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/ruanm/Codes/aps_2023.2/dotnet/firstapp/Views/Professores/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZmVzc29yZXMvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/ruanm/Codes/aps_2023.2/dotnet/firstapp/Views/Shared/Error.cshtml]
