@@ -12,8 +12,5 @@ namespace ruan.Models
        [Required]
        [Display(Name="Senha")]
        public string ?Password { get; set; }
-       
-       public virtual Carrinho? Carrinho { get; set;}
-
    }
 }

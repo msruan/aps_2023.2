@@ -30,8 +30,7 @@ namespace ruan.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("UsuarioId")
-                        .IsUnique();
+                    b.HasIndex("UsuarioId");
 
                     b.ToTable("Carrinho");
                 });
@@ -59,7 +58,7 @@ namespace ruan.Migrations
                     b.Property<int?>("CarrinhoId")
                         .HasColumnType("int");
 
-                    b.Property<int?>("CategoriaId")
+                    b.Property<int>("CategoriaId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
@@ -93,8 +92,8 @@ namespace ruan.Migrations
             modelBuilder.Entity("ruan.Models.Carrinho", b =>
                 {
                     b.HasOne("ruan.Models.Usuario", "Usuario")
-                        .WithOne("Carrinho")
-                        .HasForeignKey("ruan.Models.Carrinho", "UsuarioId")
+                        .WithMany()
+                        .HasForeignKey("UsuarioId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -109,7 +108,9 @@ namespace ruan.Migrations
 
                     b.HasOne("ruan.Models.Categoria", "Categoria")
                         .WithMany("Produtos")
-                        .HasForeignKey("CategoriaId");
+                        .HasForeignKey("CategoriaId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Categoria");
                 });
@@ -122,11 +123,6 @@ namespace ruan.Migrations
             modelBuilder.Entity("ruan.Models.Categoria", b =>
                 {
                     b.Navigation("Produtos");
-                });
-
-            modelBuilder.Entity("ruan.Models.Usuario", b =>
-                {
-                    b.Navigation("Carrinho");
                 });
 #pragma warning restore 612, 618
         }

@@ -6,5 +6,5 @@ dotnet add package Pomelo.EntityFrameworkCore.MySql --version 6.0.1
 dotnet add package Microsoft.EntityFrameworkCore.Relational --version 6.0.1
 dotnet add package System.Configuration.ConfigurationManager --version 6.0.1
 dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design --version 6.0.1
-dotnet tool install --global dotnet-ef
-dotnet tool install --global dotnet-aspnet-codegenerator
+dotnet tool install --global dotnet-ef --version 6.0.1
+dotnet tool install --global dotnet-aspnet-codegenerator --version 6.0.1

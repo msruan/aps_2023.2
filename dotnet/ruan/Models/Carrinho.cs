@@ -1,13 +1,13 @@
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 namespace ruan.Models {
 
     public class Carrinho {
         [Display(Name="Código")]
-        [Key]
         public int Id {get; set;}
-        [Required]
-        public int UsuarioId {get; set;}
-        public virtual Usuario Usuario { get; set;}
+        [ForeignKey("Usuario")]
+        public virtual int UsuarioId {get; set;}
+        public virtual Usuario? Usuario { get; set;}
         public virtual ICollection<Produto>? Produtos {get; set;}
     }
 }

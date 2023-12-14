@@ -9,6 +9,8 @@ namespace ruan.Models {
        public string ?PathImagem;
        public decimal Preco;
        public int Quantidade;
+       [ForeignKey("Categoria")]
+       public int CategoriaId {get; set;}
        public virtual Categoria? Categoria {get; set;}
     }
 }
