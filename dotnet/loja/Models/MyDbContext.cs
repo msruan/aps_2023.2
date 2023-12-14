@@ -17,5 +17,15 @@ base(options)
     public DbSet<PagamentoComCheque> PagamentoComCheque { get; set; }
     public DbSet<TipoDePagamento> TipoDePagamento { get; set; }
     public DbSet<Vendedor> Vendedore { get; set; }
+
+    // protected override void OnModelCreating(ModelBuilder modelBuilder)
+    // {
+    //     base.OnModelCreating(modelBuilder);
+
+    //     modelBuilder.Entity<TipoDePagamento>()
+    //         .HasDiscriminator<string>("Tipo")
+    //         .HasValue<PagamentoComCartao>("Cartao")
+    //         .HasValue<PagamentoComCheque>("Cheque");
+    // }
    }
 }
