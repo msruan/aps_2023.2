@@ -1,0 +1,25 @@
+appsettings.json
+,
+  "AllowedHosts": "*", "ConnectionStrings": {
+    "MyDbContext": 
+ "server=localhost;port=3306;database=ultimaprova;uid=root;pwd=123456"
+
+Program.cs
+string mysqlconnection = 
+builder.Configuration.GetConnectionString("MyDbContext");
+builder.Services.AddDbContext<MyDbContext>(options => 
+options.UseMySql(mysqlconnection, 
+ServerVersion.AutoDetect(mysqlconnection)));
+
+Control.sh
+dotnet-aspnet-codegenerator controller -name ClientesController -m Cliente -dc MyDbContext --relativeFolderPath Controllers --useDefaultLayout --referenceScriptLibraries -f
+dotnet-aspnet-codegenerator controller -name ItensController -m Item -dc MyDbContext --relativeFolderPath Controllers --useDefaultLayout --referenceScriptLibraries -f
+dotnet-aspnet-codegenerator controller -name MarcasController -m Marca -dc MyDbContext --relativeFolderPath Controllers --useDefaultLayout --referenceScriptLibraries -f
+dotnet-aspnet-codegenerator controller -name VendedoresController -m Vendedor -dc MyDbContext --relativeFolderPath Controllers --useDefaultLayout --referenceScriptLibraries  -f
+dotnet-aspnet-codegenerator controller -name TransportadorasController -m Transportadora -dc MyDbContext --relativeFolderPath Controllers --useDefaultLayout --referenceScriptLibraries   -f
+dotnet-aspnet-codegenerator controller -name TiposDePagamentoController -m TipoDePagamento -dc MyDbContext --relativeFolderPath Controllers --useDefaultLayout --referenceScriptLibraries -f
+dotnet-aspnet-codegenerator controller -name ProdutosController -m Produto -dc MyDbContext --relativeFolderPath Controllers --useDefaultLayout --referenceScriptLibraries   -f
+dotnet-aspnet-codegenerator controller -name PagamentosComChequeController -m PagamentoComCheque -dc MyDbContext --relativeFolderPath Controllers --useDefaultLayout --referenceScriptLibraries  -f
+dotnet-aspnet-codegenerator controller -name PagamentosComCartaoController -m PagamentoComCartao -dc MyDbContext --relativeFolderPath Controllers --useDefaultLayout --referenceScriptLibraries  -f
+dotnet-aspnet-codegenerator controller -name PagamentosController -m Pagamento -dc MyDbContext --relativeFolderPath Controllers --useDefaultLayout --referenceScriptLibraries  -f
+dotnet-aspnet-codegenerator controller -name NotasDeVendaController -m NotaDeVenda -dc MyDbContext --relativeFolderPath Controllers --useDefaultLayout --referenceScriptLibraries  -f
