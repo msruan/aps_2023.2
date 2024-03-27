@@ -1,4 +1,3 @@
-"Comsegue identificar algum erro no diagrama a seguir?"
 @startuml Otilio
 
 class Marca {
